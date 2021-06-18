@@ -68,7 +68,7 @@ describe('Medusa', function() {
     assert.instanceOf(medusa.statues[2], Statue);
   });
 
-  it.skip('should let the first victim go free when stoning the 4th', function() {
+  it('should let the first victim go free when stoning the 4th', function() {
     var medusa = new Medusa('Hannah');
     var victim1 = new Person('Pam');
     var victim2 = new Person('Khalid');
@@ -93,7 +93,7 @@ describe('Medusa', function() {
     assert.deepEqual(medusa.statues, [statue2, statue3, statue4]);
   });
 
-  it.skip('should return a freed statue to Person form', function() {
+  it('should return a freed statue to Person form', function() {
     var medusa = new Medusa('Hannah');
     var victim1 = new Person('Pam');
     var victim2 = new Person('Khalid');
@@ -110,7 +110,7 @@ describe('Medusa', function() {
     assert.equal(person.name, 'Pam');
   });
 
-  it.skip('should be relieved when returned to Person form', function () {
+  it('should be relieved when returned to Person form', function () {
     var medusa = new Medusa('Pam');
     var victim1 = new Person('Travis');
     var victim2 = new Person('Kayla');
