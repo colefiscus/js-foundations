@@ -6,6 +6,11 @@ class Medusa {
     this.name = name;
     this.statues = [];
   }
+
+  gazeAtVictim(victim) {
+    const statue = new Statue(victim.name)
+    this.statues.push(statue);
+  }
 }
 
 module.exports = Medusa;
