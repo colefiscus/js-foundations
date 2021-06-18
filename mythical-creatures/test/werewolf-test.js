@@ -93,7 +93,7 @@ describe('Werewolf', function() {
 
   // STOP! Scroll to the bottom and complete the Victim tests
 
-  it.skip('should be able to eat a victim once hungry', function () {
+  it('should be able to eat a victim once hungry', function () {
     var werewolf = new Werewolf('Baby');
     var victim = new Victim('Hannah');
 
@@ -104,7 +104,7 @@ describe('Werewolf', function() {
     assert.equal(fullWolf, 'Yum, Hannah was delicious.');
   });
 
-  it.skip('should transform back to human form after eating', function() {
+  it('should transform back to human form after eating', function() {
     var werewolf = new Werewolf('Baby');
     var victim = new Victim('Hannah');
 
@@ -114,7 +114,7 @@ describe('Werewolf', function() {
     assert.equal(werewolf.form, 'human');
   });
 
-  it.skip('should not be able to eat a victim while in human form', function() {
+  it('should not be able to eat a victim while in human form', function() {
     var werewolf = new Werewolf('Scott');
     var victim = new Victim('Baby');
 
