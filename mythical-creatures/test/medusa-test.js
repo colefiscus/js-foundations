@@ -130,17 +130,17 @@ describe('Medusa', function() {
 });
 
 describe('Person', function() {
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Person);
   });
 
-  it.skip('should instantiate our good friend, Person', function() {
+  it('should instantiate our good friend, Person', function() {
     var person = new Person();
 
     assert.instanceOf(person, Person);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     var scott = new Person('Scott');
     var eric = new Person('Eric');
 
@@ -148,7 +148,7 @@ describe('Person', function() {
     assert.equal(eric.name, 'Eric');
   });
 
-  it.skip('should feel frightened', function() {
+  it('should feel frightened', function() {
     var hannah = new Person('Hannah');
 
     assert.equal(hannah.mood, 'frightened');
@@ -156,17 +156,17 @@ describe('Person', function() {
 });
 
 describe('Statue', function () {
-  it.skip('should be a function', function () {
+  it('should be a function', function () {
     assert.isFunction(Statue);
   });
 
-  it.skip('should instantiate a Statue', function () {
+  it('should instantiate a Statue', function () {
     var statue = new Statue();
 
     assert.instanceOf(statue, Statue);
   });
 
-  it.skip('should have the name of its former self', function () {
+  it('should have the name of its former self', function () {
     var kayla = new Statue('Kayla');
     var hannah = new Statue('Hannah');
 
