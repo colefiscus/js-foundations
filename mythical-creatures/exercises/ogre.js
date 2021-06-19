@@ -1,6 +1,7 @@
 class Ogre {
-  constructor() {
-
+  constructor({ name, abode = "Swamp" }) {
+    this.name = name;
+    this.home = abode;
   }
 }
 
