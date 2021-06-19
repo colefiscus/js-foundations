@@ -23,7 +23,7 @@ describe('Ogre', () => {
     assert.equal(ogre.home, 'Swamp');
   });
 
-  it.skip('does not have to live in a swamp', () => {
+  it('does not have to live in a swamp', () => {
     const ogre = new Ogre({name: 'Brak', abode: 'The Ritz'});
     assert.equal(ogre.home, 'The Ritz');
   });
