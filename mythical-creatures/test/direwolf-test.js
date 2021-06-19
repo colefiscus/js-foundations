@@ -4,40 +4,40 @@ const Stark = require('../exercises/stark');
 
 describe('Direwolf', function() {
 
-  it.skip('should be a function', function() {
+  it('should be a function', function() {
     assert.isFunction(Direwolf);
   });
 
-  it.skip('should instantiate our good friend, Direwolf', function() {
+  it('should instantiate our good friend, Direwolf', function() {
     const direwolf = new Direwolf();
     assert.isObject(direwolf);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     const direwolf = new Direwolf('Nymeria');
     assert.equal(direwolf.name, 'Nymeria');
   });
 
-  it.skip('should have a default home of Beyond the Wall', function() {
+  it('should have a default home of Beyond the Wall', function() {
     const direwolf = new Direwolf('Lady');
 
     assert.equal(direwolf.name, 'Lady');
     assert.equal(direwolf.home, 'Beyond the Wall');
   });
 
-  it.skip('should be able to have other homes', function() {
+  it('should be able to have other homes', function() {
     const direwolf = new Direwolf('Ghost', 'Winterfell');
 
     assert.equal(direwolf.home, 'Winterfell');
   });
 
-  it.skip('should have a default size of massive', function() {
+  it('should have a default size of massive', function() {
     const direwolf = new Direwolf('Ghost');
 
     assert.equal(direwolf.size, 'Massive');
   });
 
-  it.skip('should be able to have another size', function() {
+  it('should be able to have another size', function() {
     const direwolf = new Direwolf('Shaggydog', 'Karhold', 'Smol Pupper');
 
     assert.equal(direwolf.name, 'Shaggydog');
@@ -45,26 +45,26 @@ describe('Direwolf', function() {
     assert.equal(direwolf.size, 'Smol Pupper');
   });
 
-  it.skip('should instantiate our good friend, Stark', function() {
-    const stark = new Stark();
+  it('should instantiate our good friend, Stark', function() {
+    const stark = new Stark({});
 
     assert.isObject(stark);
   });
 
-  it.skip('should have a name', function() {
+  it('should have a name', function() {
     const stark = new Stark({name:'Bran'});
 
     assert.equal(stark.name, 'Bran');
   });
 
-  it.skip('should have a default location of Winterfell', function() {
+  it('should have a default location of Winterfell', function() {
     const stark = new Stark({name:'Bran'});
 
     assert.equal(stark.name, 'Bran');
     assert.equal(stark.location, 'Winterfell');
   });
 
-  it.skip('should be able to have different locations', function() {
+  it('should be able to have different locations', function() {
     const stark = new Stark({name: 'Eddard', area: 'King\'s Landing'})
 
     assert.equal(stark.name, 'Eddard')
