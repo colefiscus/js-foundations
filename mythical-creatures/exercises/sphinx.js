@@ -2,6 +2,7 @@ class Sphinx {
   constructor() {
     this.name = null;
     this.riddles = [];
+    this.heroesEaten = 0;
   }
 
   collectRiddle(riddle) {
@@ -16,7 +17,11 @@ class Sphinx {
   attemptAnswer(answer) {
     const correctAnswer = this.riddles.find(riddle => riddle.answer === answer);
     if (correctAnswer) {
-      this.riddles.splice(correctAnswer)
+      const i = this.riddles.indexOf(correctAnswer);
+      this.riddles.splice(i, 1);
+      return "That wasn't that hard, I bet you don't get the next one"
+    } else {
+      this.heroesEaten++;
     }
   }
 }
